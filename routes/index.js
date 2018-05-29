@@ -7,7 +7,6 @@ router.get('/', function(req, res, next) {
 
 });
 
-
 router.post('/register',function (req,res,next) {
 
    var eventName=req.body.eventDetails.eventName;

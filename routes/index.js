@@ -9,11 +9,12 @@ router.get('/', function(req, res, next) {
 
 router.post('/register',function (req,res,next) {
 
-   var eventName=req.body.eventDetails.eventName;
-
+   var eventName=req.body.eventName;
+var summary=req.body.summary;
    count++;
-
-   res.end('Count is '+ count);
+console.log("eventName"+eventName);
+    console.log("summary"+summary);
+   res.end('Count:'+ count+" "+" summary:"+summary);
 
 
 })

@@ -12,7 +12,7 @@ router.post('/register',function (req,res,next) {
    var eventName=req.body.event_type;
 var summary=req.body.summary;
    count++;
-   console.log("id******"+ id)
+  // console.log("id******"+ id);
     console.log("eventName**********"+eventName);
     console.log("summary*********"+summary);
    res.end('Count:'+ count+" "+" summary:"+summary);

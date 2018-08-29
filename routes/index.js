@@ -29,7 +29,7 @@ var create_time=req.body.create_time;
  // console.log("id******"+ id);
    console.log("dispute_id**********"+dispute_id);
    console.log("create_time*********"+create_time);
-   console.log("request body****"+req.body+"Suresh")
+   console.log("request body****"+JSON.stringify(req.body)+"Suresh")
   res.end('Count:'+ count+" "+" summary:"+summary);
 
 

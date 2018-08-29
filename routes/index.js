@@ -20,4 +20,18 @@ var summary=req.body.summary;
 
 
 })
+
+router.post('/disputeregister',function (req,res,next) {
+
+  var dispute_id=req.body.dispute_id;
+var create_time=req.body.create_time;
+  count++;
+ // console.log("id******"+ id);
+   console.log("dispute_id**********"+dispute_id);
+   console.log("create_time*********"+create_time);
+   console.log("request body****"+req.body+"Suresh")
+  res.end('Count:'+ count+" "+" summary:"+summary);
+
+
+})
 module.exports = router;

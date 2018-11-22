@@ -16,7 +16,9 @@ var summary=req.body.summary;
     console.log("eventName**********"+eventName);
     console.log("summary*********"+summary);
     console.log("request body****"+req.body+"Suresh")
-   res.end('Count:'+ count+" "+" summary:"+summary);
+    res.writeHead(200);
+    res.end();
+   //res.end('Count:'+ count+" "+" summary:"+summary);
 
 
 })
@@ -30,8 +32,8 @@ var create_time=req.body.create_time;
    console.log("dispute_id**********"+dispute_id);
    console.log("create_time*********"+create_time);
    console.log("request body****"+JSON.stringify(req.body)+"Suresh")
-  res.end('Count:'+ count+" "+" summary:"+summary);
-
+   res.writeHead(200);
+   res.end();
 
 })
 module.exports = router;

@@ -15,7 +15,7 @@ var summary=req.body.summary;
   // console.log("id******"+ id);
     console.log("eventName**********"+eventName);
     console.log("summary*********"+summary);
-    console.log("request body****"+req.body+"Suresh")
+    console.log("request body****"+JSON.stringify(req.body)+"Suresh")
     res.writeHead(200);
     res.end();
    //res.end('Count:'+ count+" "+" summary:"+summary);
